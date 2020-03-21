@@ -1,0 +1,247 @@
+@media screen and (max-width: 575px) {
+  // main-block
+  .main-block {
+    background-position: right top;
+    background-image: url(../media/image/bg-mobile.png);
+    padding-bottom: 84px;
+
+    .main-block__count {
+      .current,
+      .all {
+        color: #fff;
+      }
+    }
+
+    .main-block__name {
+      font-size: 28px;
+      line-height: 35px;
+      color: #fff;
+    }
+
+    .main-block__desc {
+      font-size: 14px;
+      line-height: 20px;
+      color: #fff;
+    }
+
+    .main-block__logo {
+      .item {
+        min-width: calc((100% / 3) - 20px);
+        height: 64px;
+        margin-top: 16px;
+        padding: 10px 10px;
+      }
+    }
+  }
+  // main-block end
+
+  .home-moto {
+    &::after {
+      width: 600px;
+      height: 86px;
+      background-position: left center;
+      background-size: 600px 86px;
+    }
+
+    .home-moto__item--1 {
+      width: 155.86px;
+      height: 155.86px;
+      display: block;
+    }
+
+    .home-moto__item--2 {
+      width: 141.3px;
+      height: 183.66px;
+      display: block;
+      margin-top: -72px;
+    }
+
+    .home-moto__item--3 {
+      width: 162.81px;
+      height: 115.82px;
+      right: auto;
+      left: 50%;
+      top: -90px;
+      margin-right: 30px;
+    }
+
+    .home-moto__title,
+    .home-moto__desc,
+    .home-moto__btn {
+      margin-left: 0;
+    }
+
+    .home-moto__title {
+      margin-top: 48px;
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 16px;
+    }
+
+    .home-moto__desc {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 16px;
+    }
+
+    .home-moto__btn {
+      font-size: 12px;
+      line-height: 22px;
+      display: block;
+      white-space: nowrap;
+    }
+  }
+
+  .page-catalog__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+
+  .page-catalog {
+    .page-catalog__item {
+      img {
+        height: 90.68px;
+        margin-bottom: 6px;
+      }
+
+      .name {
+        font-size: 12px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  // home-blocks
+  .home-blocks {
+    .container {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+
+      .col-lg-5 {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+      }
+
+      .col-lg-7 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
+
+    .home-blocks__img-wrapper {
+      height: 240px;
+    }
+
+    .item {
+      padding-bottom: 0;
+    }
+
+    .item--left {
+      .title-absolute {
+        top: 0;
+        left: 30px;
+        margin-top: -12px !important;
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+
+    .item--right {
+      .title-absolute {
+        top: 0;
+        left: 30px;
+        margin-top: -12px !important;
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+
+    .item__text--left {
+      .title {
+        margin-top: -12px !important;
+        margin-left: 0;
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      .desc {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 16px 0;
+      }
+
+      .button {
+        margin-left: 0;
+        width: 100%;
+        display: block;
+        font-size: 12px;
+        line-height: 22px;
+        text-align: center;
+      }
+    }
+
+    .item__text--right {
+      .title {
+        margin-top: -12px !important;
+        margin-left: 0;
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      .desc {
+        width: 100%;
+        margin: 16px 0;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      .button {
+        margin-left: 0;
+        font-size: 12px;
+        line-height: 22px;
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  // home-blocks end
+
+  .form {
+    form {
+      .submit {
+        width: 100%;
+      }
+    }
+  }
+
+  .modal-form__close {
+    padding-right: 15px;
+  }
+
+  .modal-form__logo {
+    //margin-left: 15px;
+  }
+
+  .about-page {
+    padding-top: 40px;
+
+    .about-page__title {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 8px;
+    }
+
+    .about-page__text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .about-page__img {
+      height: 240px;
+      margin-top: 40px;
+    }
+  }
+}
