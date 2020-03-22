@@ -17,6 +17,23 @@ $(document).ready(() => {
     mainClass: 'mfp-fade'
   });
 
+// menu mobile
+  $("#navToggle").click(function() {
+    $(this).toggleClass("active");
+    $(".header-nav").toggleClass("open");
+    $("body").toggleClass("locked"); 
+});
+
+
+//anhors
+$(".anhors").on("click","a", function (event) {
+  event.preventDefault();
+  var id  = $(this).attr('href'),
+      top = $(id).offset().top;
+  $('body,html').animate({scrollTop: top}, 800);
+});
+
+
 
 });
 

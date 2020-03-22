@@ -10,7 +10,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Garmony</title>
+  <title>Гармония Вкуса</title>
 </head>
 <body>
 
@@ -18,23 +18,30 @@
   <header class="main-header">
     <div class="header-container">
       <div class="header-logo">
-        <a href=""><img src="./media/icon/logo/logo.svg" alt="" ></a>
-       
+        <a href="#"><img class="main-logo" src="./media/icon/logo/logo.svg" alt="" ></a>
+        <a  href="#"><img class="single-logo" src="./media/icon/logo/logo-img.svg" alt=""></a>
       </div>
       <div class="header-nav">
-        <ul>
-          <li><a href="#">Продукция</a></li>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Преимущества</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+        <nav class="overlayMenu anhors">
+          <ul>
+            <li><a href="#products">Продукция</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#benefits">Преимущества</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+          <button class="header-btn mobile-btn">Cвяжитесь с нами</button>
+        </nav>
       </div>
       <div class="header-contact">
         <p>+7 (843) 276-66-76</p>
         <button class="header-btn">Cвяжитесь с нами</button>
       </div>
+      <div class="navBurger" role="navigation" id="navToggle"></div> 
     </div>
   </header>
+
+
+
   <!-- MAIN CONTENT -->
 <section class="main-section">
   <div class="container">
@@ -126,7 +133,7 @@
 
 
 <!-- products section -->
-<section class="products">
+<section id="products" class="products">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -136,45 +143,45 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-lg-6 col-md-6">
+      <div class="col-12 col-lg-6 col-md-12">
         <div class="products-content">
             <h3>Подсолнечное рафинированное дезодорированное масло марки “Премиум”</h3>
               <div class="product-item">
                 <div class="text">Гост</div>
                 <div class="text">1129-2013</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Марка</div>
                 <div class="text">Премиум</div>
               </div>
-              <hr class="line">
+             
               <div class="product-item">
                 <div class="text">Бутылка</div>
                 <div class="text">ПЭТ</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Упаковка</div>
                 <div class="text">Гофроящик</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">ЖИР</div>
                 <div class="text">99,9 г.</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Энегретическая ценность</div>
                 <div class="text">899 ккал / 3760 кДж</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Срок годности:</div>
                 <div class="text">8 месяцев</div>
               </div>
-              <hr class="line">
-              <div class="product-item">
+              
+              <div class="product-item pack">
                 <div class="text">Бутылок в упаковке:</div>
               </div>
               <div class="product-table">
@@ -201,52 +208,52 @@
               </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6 col-md-6">
+      <div class="col-12 col-lg-6 col-md-12">
         <div class="products-img">
           <img src="./media/image/poduct.png" alt="">
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-lg-6 col-md-6 order-last">
+      <div class="col-12 col-lg-6 col-md-12 order-last">
         <div class="products-content">
             <h3>Кукурузное рафинированное дезодорированное масло</h3>
               <div class="product-item">
                 <div class="text">Гост</div>
                 <div class="text">1129-2013</div>
               </div>
-              <hr class="line">
+             
               <div class="product-item">
                 <div class="text">Марка</div>
                 <div class="text">Премиум</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Бутылка</div>
                 <div class="text">ПЭТ</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Упаковка</div>
                 <div class="text">Гофроящик</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">ЖИР</div>
                 <div class="text">99,9 г.</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Энегретическая ценность</div>
                 <div class="text">899 ккал / 3760 кДж</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Срок годности:</div>
                 <div class="text">8 месяцев</div>
               </div>
-              <hr class="line">
-              <div class="product-item">
+              
+              <div class="product-item pack">
                 <div class="text">Бутылок в упаковке:</div>
               </div>
               <div class="product-table">
@@ -273,52 +280,52 @@
               </div>
         </div>
       </div>
-      <div class="col-12  col-lg-6 col-md-6">
+      <div class="col-12  col-lg-6 col-md-12">
         <div class="products-img">
           <img src="./media/image/poduct1.png" alt="">
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-lg-6 col-md-6">
+      <div class="col-12 col-lg-6 col-md-12">
         <div class="products-content">
             <h3>Подсолнечное рафинированное дезодорированное с добавлением оливкового масла</h3>
               <div class="product-item">
                 <div class="text">Гост</div>
                 <div class="text">1129-2013</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Марка</div>
                 <div class="text">Премиум</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Бутылка</div>
                 <div class="text">ПЭТ</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Упаковка</div>
                 <div class="text">Гофроящик</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">ЖИР</div>
                 <div class="text">99,9 г.</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Энегретическая ценность</div>
                 <div class="text">899 ккал / 3760 кДж</div>
               </div>
-              <hr class="line">
+              
               <div class="product-item">
                 <div class="text">Срок годности:</div>
                 <div class="text">8 месяцев</div>
               </div>
-              <hr class="line">
-              <div class="product-item">
+              
+              <div class="product-item pack">
                 <div class="text">Бутылок в упаковке:</div>
               </div>
               <div class="product-table">
@@ -345,7 +352,7 @@
               </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6 col-md-6">
+      <div class="col-12 col-lg-6 col-md-">
         <div class="products-img">
           <img src="./media/image/poduct2.png" alt="">
         </div>
@@ -354,7 +361,7 @@
   </div>
 </section>
 
-<section class="about">
+<section id="about" class="about">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-6 col-md-12">
@@ -406,7 +413,7 @@
 </section>
 
 <!-- Benefits -->
-<section class="benefits">
+<section id="benefits" class="benefits">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -497,7 +504,7 @@
 
 
 
-<section class="contacts">
+<section id="contact" class="contacts">
     <div class="contacts-content">
         <div class="contact-block">
             <h2>Свяжитесь с нами</h2>
@@ -546,12 +553,14 @@
     </div>
   </div>
   <div class="footer-content">
-    <ul>
-      <li><a href="#">Продукция</a></li>
-      <li><a href="#">О нас</a></li>
-      <li><a href="#">Преимущества</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
+    <nav class="anhors">
+      <ul>
+        <li><a href="#products">Продукция</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#benefits">Преимущества</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
     <p>© Администрация Президента России 2020</p>
   </div>
 </section>
