@@ -4,7 +4,7 @@
   outline: none;
   color: #FFFFFF;
   box-sizing: border-box;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', serif;
 }
 
 html {
@@ -39,7 +39,8 @@ img {
 /*settings*/
 @import "fonts";
 @import "var";
-
+@import "slider";
+@import "modal-alert";
 /*over use blocks*/
 @import "header";
 @import "footer";

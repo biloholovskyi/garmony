@@ -27,9 +27,7 @@ const webConfig = {
 
 gulp.task('default', function() {
   browserSync.init({
-    server: {
-        baseDir: "./app"
-    }
+    proxy: "http://localhost:8888/garmony/app",
 });
     gulp.watch("app/sass/**/*.scss", function () {
         return gulp.src("app/sass/**/*.scss")

@@ -10,50 +10,51 @@
   align-items: center;
 
   .footer-content {
-      text-align: right;
+    text-align: right;
 
-      .footer-logo {
+    .footer-logo {
 
-          .footer-contact {
-              display: flex;
+      .footer-contact {
+        display: flex;
 
-              img {
-                  width: 18px;
-                  height: 18px;
-                  margin-right: 12px;
-              }
+        img {
+          width: 18px;
+          height: 18px;
+          margin-right: 12px;
+        }
 
-              p {
-                  font-style: normal;
-                  font-weight: normal;
-                  font-size: 14px;
-                  line-height: 22px;              
-              }
-          }
+        p {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    & ul {
+      display: flex;
+      padding-bottom: 20px;
+
+      li {
+        padding-right: 36px;
+        list-style: none;
+
+        a {
+          margin-bottom: 0;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          list-style: none;
+        }
       }
 
-      & ul {
-          display: flex;
-          padding-bottom: 20px;
-
-          li {
-              padding-right: 36px;
-              list-style: none;
-              a {
-                  margin-bottom: 0;
-                  font-style: normal; 
-                  font-weight: 500;
-                  font-size: 16px;
-                  line-height: 24px;  
-                  list-style: none;                
-              }
-          }
-
-          & li:last-child {
-              padding-right: 0;
-          }
-
+      & li:last-child {
+        padding-right: 0;
       }
+
+    }
   }
 }
 

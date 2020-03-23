@@ -1,46 +1,92 @@
 @media screen and (max-width: 767px) {
- 
-    .main-header {
-        
-        .header-container {
 
-            .header-contact {
-                justify-content: flex-start;
-            }
+  .main-header {
+
+    .header-container {
+
+      .header-contact {
+        justify-content: flex-start;
+      }
 
 
-            .header-contact {
-                display: none;
-            }
-        }
+      .header-contact {
+        display: none;
+      }
     }
+  }
 
 
-// footer 
+  // footer
 
-.footer {
+  .footer {
     flex-direction: column;
 
     .footer-content {
-        padding: 30px 0px;
-        text-align: center;
+      padding: 30px 0px;
+      text-align: center;
     }
-}
+  }
 
-// main content 
+  // main content
 
-.main-section .main-content {
+  .main-section .main-content {
     padding-top: 200px;
 
-        h1 {
-            font-size: 35px;
-            line-height: 58px;
-        }
-
-        h3 {
-            font-size: 28px;
-            margin-bottom: 48px;
-        }
+    h1 {
+      font-size: 35px;
+      line-height: 58px;
     }
 
+    h3 {
+      font-size: 28px;
+      margin-bottom: 48px;
+    }
+  }
+
+  // geography
+  .geography {
+    padding: 100px 0;
+
+    .geography-content {
+      flex-direction: column;
+
+      .geography-item {
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  // geography end
+
+  .benefits {
+    padding: 100px 0;
+
+    .benefits-content {
+      flex-direction: column;
+
+      .benefits-item {
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .main-header .header-container .header-logo a {
+    border-right: none;
+  }
+
+  // modal-alert
+  .modal-alert {
+    .modal-alert__text {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  // modal-alert end
 }

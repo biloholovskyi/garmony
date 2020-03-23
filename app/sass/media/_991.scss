@@ -1,210 +1,220 @@
 @media screen and (max-width: 991px) {
-  
-    .main-header {
-        
-        .header-container {
+  .main-header {
+    .header-container {
 
-            .navBurger {
-                display: block;
-            }
-
-            .header-logo {
-                flex: 5%;
-                max-width: 150px;
-            }
-            .header-contact {
-                justify-content: center;
-            }
-
-            .header-nav {
-                    position: fixed;
-                    background: #2a3140;
-                    top: 0;
-                    right: 0;
-                    width: 100%;
-                    height: 100%;
-                    opacity: 0;
-                    transform-origin: right top;
-                    transform: scale(0);
-                    visibility: hidden;
-                    transition: all 0.4s ease-in-out;
-                    overflow: hidden;
-                    &.open {
-                        opacity: 0.99;
-                        visibility: visible;
-                        transform: scale(1);
-                        li {
-                            display: block;
-                            animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5)
-                                forwards;
-                            animation-delay: 0.4s;
-                            transform: rotate(-7deg);
-                            transform-origin: right bottom;
-                            &:nth-of-type(2) {
-                                animation-delay: 0.5s;
-                            }
-                            &:nth-of-type(3) {
-                                animation-delay: 0.6s;
-                            }
-                            &:nth-of-type(4) {
-                                animation-delay: 0.7s;
-                            }
-                            &:nth-of-type(5) {
-                                animation-delay: 0.8s;
-                            }
-                        }
-                    }
-
-
-                    .overlayMenu {
-                        position: absolute;
-                        top: 30%;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        ul {
-                            list-style: none;
-                            padding: 0;
-                            margin: 0 auto;
-                            display: block;
-                            position: relative;
-                            height: 100%;
-                            li {
-                                display: block;
-                                position: relative;
-                                opacity: 0;
-                                width: 100%;
-                                text-align: center;
-                                a {
-                                    display: inline-block;
-                                    // border: 1px solid rgba(255, 255, 255, 0.09);
-                                    color: #fff;
-                                    text-decoration: none;
-                                    font-size: 30px;
-                                    padding: 10px 40px 10px 40px;
-                                    margin: 5px 0;
-                                    transition: 0.2s;
-                                    // &:hover,
-                                    // &:active,
-                                    // &:focus {
-                                    //     transform: translateX(-2px);
-                                    //     padding-left: 80px;
-                                    //     outline: 1px solid rgba(255, 255, 255, 0.3);
-                                    //     background: rgba(255, 255, 255, 0.03);
-                                    // }
-                                }
-                            }
-                        }
-
-
-                        .mobile-btn {
-                            display: block;
-                            font-style: normal;
-                            font-weight: 500;
-                            font-size: 16px;
-                            line-height: 120%;
-                            text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
-                            padding: 16px 24px;
-                            border: 2px solid #fff;
-                            border-radius: 100px;
-                            background-color: transparent;
-                            margin-top: 50px;
-                            position: absolute;
-                            left: 50%;
-                            transform: translateX(-50%);
-                        }
-                    }           
-                
-
-                } 
-            }
-        }
-        
-        .locked {
-            overflow: hidden;
-        }
-        
-        @keyframes fadeInRight {
-            0% {
-                opacity: 0;
-                left: 50px;
-            }
-            100% {
-                opacity: 1;
-                left: 0;
-                transform: rotate(0deg);
-            }
-        }
-
-
-      // MAIN SECTION 
-      .main-section {
-
-        .main-content {
-
-            h1 {
-                font-size: 45px;
-            }
-
-            h3 {
-                font-size: 35px;
-            }
-        }
-
-      }  
-
-      // products section 
-
-      .products .products-img {
-          margin-bottom: 50px;
+      .navBurger {
+        display: block;
       }
 
+      .header-logo {
+        flex: 5%;
+        max-width: 150px;
+      }
 
-      // about section
+      .header-contact {
+        justify-content: center;
+      }
 
-      .about .about-content {
+      .header-nav {
+        position: fixed;
+        background: #2a3140;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transform-origin: right top;
+        transform: scale(0);
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+        overflow: hidden;
 
-        h2 {
+        &.open {
+          opacity: 0.99;
+          visibility: visible;
+          transform: scale(1);
+
+          li {
+            display: block;
+            animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards;
+            animation-delay: 0.4s;
+            transform: rotate(-7deg);
+            transform-origin: right bottom;
+
+            &:nth-of-type(2) {
+              animation-delay: 0.5s;
+            }
+
+            &:nth-of-type(3) {
+              animation-delay: 0.6s;
+            }
+
+            &:nth-of-type(4) {
+              animation-delay: 0.7s;
+            }
+
+            &:nth-of-type(5) {
+              animation-delay: 0.8s;
+            }
+          }
+        }
+
+
+        .overlayMenu {
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          transform: translateX(-50%);
+
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            height: 100%;
+
+            li {
+              display: block;
+              position: relative;
+              opacity: 0;
+              width: 100%;
+              text-align: center;
+
+              a {
+                display: inline-block;
+                // border: 1px solid rgba(255, 255, 255, 0.09);
+                color: #fff;
+                text-decoration: none;
+                font-size: 30px;
+                padding: 10px 40px 10px 40px;
+                margin: 5px 0;
+                transition: 0.2s;
+                // &:hover,
+                // &:active,
+                // &:focus {
+                //     transform: translateX(-2px);
+                //     padding-left: 80px;
+                //     outline: 1px solid rgba(255, 255, 255, 0.3);
+                //     background: rgba(255, 255, 255, 0.03);
+                // }
+              }
+            }
+          }
+
+
+          .mobile-btn {
+            display: block;
+            width: 80%;
             text-align: center;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+            text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+            padding: 16px 24px;
+            border: 2px solid #fff;
+            border-radius: 100px;
+            background-color: transparent;
+            margin-top: 50px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+          }
         }
 
-        p {
-            padding-bottom: 50px;
-        }
-      }
-
-      // contacts section 
-
-      .contacts .contacts-content {
-
-        .contact-block {
-            text-align: center;
-            padding: 20px 50px;
-
-            h2 {
-                max-width: none;
-                margin-bottom: 36px;
-            }
-
-            .social-icon {
-                justify-content: center;
-            }
-        }
-
-        .contact-form-block {
-            padding: 50px 0 20px;
-
-            form {
-                margin: 0 auto;
-
-            }
-            p {
-                text-align: center;
-            }
-        }
 
       }
-
-        
-      
-
     }
+  }
+
+  .locked {
+    overflow: hidden;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 50px;
+    }
+    100% {
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+    }
+  }
+
+
+  // MAIN SECTION
+  .main-section {
+
+    .main-content {
+
+      h1 {
+        font-size: 45px;
+      }
+
+      h3 {
+        font-size: 35px;
+      }
+    }
+
+  }
+
+  // products section
+
+  .products .products-img {
+    margin-bottom: 50px;
+  }
+
+
+  // about section
+
+  .about .about-content {
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      padding-bottom: 50px;
+    }
+  }
+
+  // contacts section
+
+  .contacts {
+    &::after {
+      width: 100%;
+    }
+
+    .contact-block {
+      text-align: center;
+      padding: 20px 50px;
+
+      h2 {
+        max-width: none;
+        margin-bottom: 36px;
+      }
+
+      .social-icon {
+        justify-content: center;
+      }
+    }
+
+    .contact-form-block {
+      padding: 0;
+
+      form {
+        margin: 0 auto;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+  }
+
+
+}

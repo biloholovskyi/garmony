@@ -1,0 +1,117 @@
+.partners {
+  background-color: #F6F6F6;
+  padding: 128px 0;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #F6F6F6 0%, rgba(246, 246, 246, 0) 100%);
+    z-index: 2;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #F6F6F6 0%, rgba(246, 246, 246, 0) 100%);
+    z-index: 2;
+    transform: rotate(180deg);
+  }
+
+  h2 {
+    font-family: Montserrat, serif;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 70px;
+    text-align: center;
+    color: #111111;
+    margin-bottom: 70px;
+  }
+
+  &__slider {
+    position: relative;
+
+    img {
+      width: 160px;
+      height: 160px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .owl-nav {
+      position: absolute;
+      width: 360px;
+      left: 50%;
+      margin-left: -180px;
+      bottom: -24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      button {
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+        border: 2px solid rgba(0, 0, 0, 0.1) !important;
+        border-radius: 50% !important;
+        background-image: url(../media/icon/arrow-left.svg) !important;
+        background-position: center !important;
+        background-size: 24px !important;
+        background-repeat: no-repeat !important;
+        margin: 0 !important;
+
+        &:hover {
+          background-image: url(../media/icon/arrow-left.svg) !important;
+          background-position: center !important;
+          background-size: 24px !important;
+          background-repeat: no-repeat !important;
+          background-color: transparent !important;
+        }
+      }
+
+      .owl-next {
+        transform: rotate(180deg);
+        margin-right: -83px !important;
+        position: relative;
+      }
+
+      .owl-prev {
+        margin-left: -83px !important;
+        position: relative;
+      }
+    }
+
+    .owl-dots {
+      margin: 20px auto 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 360px;
+      width: 100%;
+      background: #E5E5E5;
+
+      .owl-dot {
+        width: 100%;
+        height: 2px;
+        position: relative;
+        z-index: 1;
+
+        span {
+          display: none;
+        }
+      }
+
+      .active {
+        background: #F20505;
+      }
+    }
+  }
+}
